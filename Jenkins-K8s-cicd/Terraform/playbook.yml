@@ -1,0 +1,14 @@
+- hosts: K8S_Master
+  become: yes
+  roles:
+   - master
+
+- hosts: K8S_Slave1
+  become: yes
+  roles:
+   - slaves
+
+- hosts: K8S_Slave2
+  become: yes
+  roles:
+   - slaves
